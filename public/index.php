@@ -1,52 +1,12 @@
 <?php
-require_once 'core/init.inc.php';
+require_once 'assets/common/header.inc';
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Moart</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="scripts/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome/4.6.3/css/font-awesome.min.css">
-    <link href="styles/main.css" rel="stylesheet" type="text/css"/>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-</head>
-<body>
     <div class="jumbotron main_img">
         <div class="container">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?php echo WEB_ROOT; ?>"><img src="images/logo2.jpg" class="logo" /> </a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#band">About Us</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Services<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Real Estate</a></li>
-                                <li><a href="#">Agriculture</a></li>
-                                <li><a href="#">Construction</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#tour">Contact us</a></li>
-
-                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                    </ul>
-                </div>
-            </nav>
+            <?php
+            require_once 'assets/common/nav.inc';
+            ?>
         </div>
-<!--   <img src="images/bg.jpg" class="bg_img" />   -->
-
     </div>
     <div class="well-lg notice">
         <div class="container"><h4>Be the best by discussing with the proffessionals...</h4></div>
@@ -108,25 +68,6 @@ require_once 'core/init.inc.php';
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="row" style="padding-top:20px;">
-                <div class="pull-right">
-                    <a class="fa fa-facebook fa-3 text-muted" href=""></a>
-                    <a class="fa fa-twitter fa-3 text-muted" href=""></a>
-                </div>
-                <div>
-                    <a class="text-muted" href="/">Home</a>
-                    <a class="text-muted" href="contact.php">Contact Us</a>
-                </div>
-            </div>
-            <hr>
-            <p class="pull-right">© 2016 infinitizon. All rights reserved</p>
-            <p>Privacy</p>
-        </div>
-    </footer>
-    <script src="scripts/jquery-ui/1.12.0/external/jquery/jquery.js" type="text/javascript"></script>
-    <script src="scripts/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript"></script>
-    <script src="scripts/jquery-ui/1.12.0/jquery-ui.js" type="text/javascript"></script>
-</body>
-</html>
+<?php
+require_once 'assets/common/footer.inc';
+?>
