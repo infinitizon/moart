@@ -34,10 +34,10 @@
     <script src="<?php echo WEB_ROOT; ?>/scripts/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript"></script>
     <script src="<?php echo WEB_ROOT; ?>/scripts/jquery-ui/1.12.0/jquery-ui.js" type="text/javascript"></script>
     <?php
-    if($validationEngine_js){
-        foreach ( $validationEngine_js as $validation ){
+    if($script_js){
+        foreach ( $script_js as $js ){
     ?>
-        <script src="<?php echo WEB_ROOT; ?>/scripts/<?php echo $validation; ?>" type="text/javascript"></script>
+        <script src="<?php echo WEB_ROOT; ?>/scripts/<?php echo $js; ?>" type="text/javascript"></script>
     <?php
         }
     }

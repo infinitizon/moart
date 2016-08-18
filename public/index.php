@@ -1,11 +1,37 @@
 <?php
+$script_js = array('bootstrap/bootstrap-select/1.11.0/bootstrap-select.min.js','ticker.js');
+$style_css = array('bootstrap-select/1.11.0/bootstrap-select.min.css','ticker.css');
+
+
 require_once 'assets/common/header.inc';
 ?>
     <div class="jumbotron cover_img main_img">
-        <div class="container">
+        <div class="container" style="position: relative;">
             <?php
             require_once 'assets/common/nav.inc';
             ?>
+            <div style="margin-top:25%; position:relative;">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-xs-2 text-right">
+                            <div class="form-group">
+                                <select class="selectpicker" data-width="fit">
+                                    <option>Buy</option>
+                                    <option>Rent</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search for properties..." id="q">
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <button type="submit" class="btn btn-danger">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <div class="well-lg notice">
@@ -13,6 +39,19 @@ require_once 'assets/common/header.inc';
     </div>
     <section class="well sevices">
         <div class="container">
+            <div class="row">
+                <?php
+                // Source: http://www.jqueryscript.net/animation/Mobile-friendly-News-Ticker-with-jQuery-CSS3-Responsive-Ticker.html
+                    $q_getNews = "SELECT * FROM news";
+                    $r_getNews = $dbo->prepare($q_getNews);
+                    $r_getNews->execute(array());
+                    echo "<div class=\"ticker-container\"><div class=\"ticker-caption\"><p>Latest</p></div><ul>";
+                    while ($news = $r_getNews->fetch(PDO::FETCH_ASSOC)) {
+                        echo "<div><li class=\"news-item\"><span><a href=\"#\">{$news['news_title']}</a></span></li></div>";
+                    }
+                    echo "</ul>";
+                ?>
+            </div>
             <div class="row text-center">
                 <article class="col-sm-4">
                     <div class="img-circle img-responsive"><img src="images/houseSearch.png" width="70" height="70"  /></div>

@@ -19,5 +19,5 @@ $C['DB_PASS'] =  ''; // rootn31
 /*
 * The name of the database to work with
 */
-$C['DB_NAME'] = 'geotripe';  //
+$C['DB_NAME'] = 'moart';  //
 ?>

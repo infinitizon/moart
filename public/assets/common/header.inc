@@ -1,5 +1,6 @@
 <?php
 require_once 'core/init.inc.php';
+$fxns = new Functions($dbo);
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,13 +16,13 @@ require_once 'core/init.inc.php';
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <?php
-        if($validationEngine_css){
-            foreach ( $validationEngine_css as $validation ){
-    ?>
-                <link rel="stylesheet" type="text/css" href="<?php echo WEB_ROOT; ?>/styles/<?php echo $validation; ?>" />
-    <?php
-            }
+    if($style_css){
+        foreach ( $style_css as $css ){
+            ?>
+            <link rel="stylesheet" type="text/css" href="<?php echo WEB_ROOT; ?>/styles/<?php echo $css; ?>" />
+            <?php
         }
+    }
     ?>
 </head>
 <body>
