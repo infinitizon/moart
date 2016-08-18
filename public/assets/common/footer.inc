@@ -33,5 +33,8 @@
 <script src="scripts/jquery-ui/1.12.0/external/jquery/jquery.js" type="text/javascript"></script>
 <script src="scripts/bootstrap/3.3.7/js/bootstrap.js" type="text/javascript"></script>
 <script src="scripts/jquery-ui/1.12.0/jquery-ui.js" type="text/javascript"></script>
+<?php foreach ( $validationEngine_js as $validation ): ?>
+    <script src="<?php echo WEB_ROOT; ?>scripts/<?php echo $validation; ?>" type="text/javascript"></script>
+<?php endforeach; ?>
 </body>
 </html>

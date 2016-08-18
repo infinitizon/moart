@@ -9,8 +9,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#band">About Us</a></li>
+            <li><a href="<?php echo WEB_ROOT; ?>">Home</a></li>
+            <li><a href="about.php">About Us</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Services<span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -20,6 +20,7 @@
                 </ul>
             </li>
             <li><a href="contactus.php">Contact us</a></li>
+            <li><a href="" class="text-muted">07059561421, 08057945452</a></li>
         </ul>
     </div>
 </nav>

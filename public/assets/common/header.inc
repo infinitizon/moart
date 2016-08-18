@@ -13,5 +13,8 @@ require_once 'core/init.inc.php';
     <link href="styles/main.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <?php foreach ( $validationEngine_css as $validation ): ?>
+        <link rel="stylesheet" type="text/css" href="<?php echo WEB_ROOT; ?>styles/<?php echo $validation; ?>" />
+    <?php endforeach; ?>
 </head>
 <body>
