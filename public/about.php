@@ -2,7 +2,7 @@
 require_once 'assets/common/header.inc';
 ?>
 
-<div class="jumbotron contact_img">
+<div class="jumbotron cover_img about_img">
     <div class="container">
         <?php
         require_once 'assets/common/nav.inc';

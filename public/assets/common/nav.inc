@@ -19,8 +19,14 @@
                     <li><a href="#">Construction</a></li>
                 </ul>
             </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Media <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Downloads</a></li>
+                </ul>
+            </li>
             <li><a href="contactus.php">Contact us</a></li>
-            <li><a href="" class="text-muted">07059561421, 08057945452</a></li>
         </ul>
     </div>
 </nav>

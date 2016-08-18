@@ -1,7 +1,7 @@
 <?php
 require_once 'assets/common/header.inc';
 ?>
-    <div class="jumbotron main_img">
+    <div class="jumbotron cover_img main_img">
         <div class="container">
             <?php
             require_once 'assets/common/nav.inc';
@@ -30,6 +30,15 @@ require_once 'assets/common/header.inc';
                     <p class="text-justify">Moart is your one stop shop for construction related materials. From providing building materials to supplies of construction equipments. Moart is the A-Z of all your construction needs </p>
                 </article>
             </div>
+        </div>
+    </section>
+    <section class="featured-seller">
+        <div class="container text-center">
+            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/chevron.png" class="img-responsive"></div>
+            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/firstBank.png" class="img-responsive"></div>
+            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/kpmg.png" class="img-responsive"></div>
+            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/bollore.jpg" class="img-responsive"></div>
+            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/unionBank.png" class="img-responsive"></div>
         </div>
     </section>
     <section class="feedback">
