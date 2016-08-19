@@ -135,6 +135,7 @@ section.sevices article{
 /*********** News List ********************/
 #newsLists{margin:0; padding:2px; list-style:none;}
 #newsLists li { height: 60px; border-bottom:1px dotted #999; padding:5px; line-height:12px;}
+#newsLists li em{margin-bottom: 5px;}
 #newsLists li span{ font-size:0.8em;}
 #newsLists li img{ float:left; width:50px; height:50px; margin:0 5px; }
 #newsLists li a{ text-decoration:none; box-shadow:none;box-shadow:0; border:none; margin-top:20px; background:none;}

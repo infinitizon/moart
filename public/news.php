@@ -84,7 +84,7 @@ require_once 'assets/common/header.inc';
                                 $newsLink = $fxns->_readMore(strip_tags(html_entity_decode($details['news_details'])), 45, $readMoreLink);
                                 $news .= "<li>{$readMoreLink}";
                                 $news .= "<img src=\"" . (!empty($details['image']) ? $details['image'] : WEB_ROOT.'/images/img_not_available.png') . "\" class=\"img-responsive img-thumbnail\" />";
-                                $news .= "{$details['news_title']}</a><br /><span>{$newsLink}</span></li>";
+                                $news .= "<em>{$details['news_title']}</em></a><br /><span>{$newsLink}</span></li>";
                             }
                             $news .= "</ul>";
                             echo $news;

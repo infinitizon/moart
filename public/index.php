@@ -42,10 +42,10 @@ require_once 'assets/common/header.inc';
             <div class="row">
                 <?php
                 // Source: http://www.jqueryscript.net/animation/Mobile-friendly-News-Ticker-with-jQuery-CSS3-Responsive-Ticker.html
-                    $q_getNews = "SELECT * FROM news";
+                    $q_getNews = "SELECT * FROM news ORDER BY news_id DESC LIMIT 5";
                     $r_getNews = $dbo->prepare($q_getNews);
                     $r_getNews->execute(array());
-                    echo "<div class=\"ticker-container\"><div class=\"ticker-caption\"><p>Latest</p></div><ul>";
+                    echo "<div class=\"ticker-container\"><div class=\"ticker-caption\"><p>Latest News</p></div><ul>";
                     while ($news = $r_getNews->fetch(PDO::FETCH_ASSOC)) {
                         echo "<div><li class=\"news-item\"><span><a href=\"#\">{$news['news_title']}</a></span></li></div>";
                     }

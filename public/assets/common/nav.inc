@@ -10,13 +10,13 @@
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo WEB_ROOT; ?>">Home</a></li>
-            <li><a href="<?php echo WEB_ROOT; ?>/about.php">About Us</a></li>
+            <li><a href="<?php echo WEB_ROOT; ?>/about">About Us</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Services<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Real Estate</a></li>
-                    <li><a href="#">Agriculture</a></li>
-                    <li><a href="#">Construction</a></li>
+                    <li><a href="<?php echo WEB_ROOT; ?>/services/estates">Real Estate</a></li>
+                    <li><a href="<?php echo WEB_ROOT; ?>/services/agric">Agriculture</a></li>
+                    <li><a href="<?php echo WEB_ROOT; ?>/services/construction">Construction</a></li>
                 </ul>
             </li>
             <li class="dropdown">
