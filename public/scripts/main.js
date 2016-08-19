@@ -2,7 +2,9 @@
  * Created by ahassan on 8/18/16.
  */
 $(function () {
-    $('#js-news').ticker();
+    if(jQuery().ticker) {
+        $('#js-news').ticker();
+    }
 
     var tick = function() {
         $('#ticker li:first').slideUp(function() {

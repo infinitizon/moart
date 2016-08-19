@@ -1,0 +1,13 @@
+RewriteEngine On
+
+#RewriteRule ^/test/(.*)$ ^/test/.(.*) [R=301,NC,L] # Handle requests for "pet-care"
+RewriteRule ^/?news-and-events/$ news.php [L]
+RewriteRule ^/?news-and-events/([0-9]+)$ news.php?news=$1 [L]
+RewriteRule ^/?news-and-events/([0-9]+)/([0-9]+)$ news.php?news=$1&page=$2 [L]
+
+RewriteRule ^/?about$ about.php [L]
+RewriteRule ^/?contact$ contactus.php [L]
+RewriteRule ^/?home(/)$ home/index.php [L]
+RewriteRule ^/?home/uploads$ home/uploadify.php [L]
+RewriteRule ^[A-Za-z-/]+/?$ index.php [NC,L] # Handle requests for "pet-care"
+#php_value upload_max_filesize 10M

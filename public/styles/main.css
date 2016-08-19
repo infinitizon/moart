@@ -96,6 +96,14 @@ body{
             ),url("../images/aboutus.jpg") center no-repeat;
     background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
 }
+.jumbotron.news_img {
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.45)
+            ),url("../images/news.jpg") center no-repeat;
+    background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
+}
 .jumbotron .container.searchForm{
     margin-top:150px;
 }
@@ -123,6 +131,21 @@ section.sevices article{
     text-align: center;
     width: 18%;
 }
+
+/*********** News List ********************/
+#newsLists{margin:0; padding:2px; list-style:none;}
+#newsLists li { height: 60px; border-bottom:1px dotted #999; padding:5px; line-height:12px;}
+#newsLists li span{ font-size:0.8em;}
+#newsLists li img{ float:left; width:50px; height:50px; margin:0 5px; }
+#newsLists li a{ text-decoration:none; box-shadow:none;box-shadow:0; border:none; margin-top:20px; background:none;}
+/*********** News Ticker ********************/
+#ticker {margin:0; padding:2px; list-style:none; height: 180px;   overflow: hidden; }
+#ticker li { height: 60px; border-bottom:1px dotted #999; padding:5px; line-height:12px;}
+#ticker li span{ font-size:0.8em;}
+#ticker li img{ float:left; width:50px; height:50px; margin:0 5px; }
+#ticker li a{ text-decoration:none; box-shadow:none;box-shadow:0; border:none; margin-top:20px; background:none;}
+/*********** End News Ticker ********************/
+
 section.sevices div.img-circle{
     border:1px solid #000; padding:10px; width:100px; height:100px;display:inline-block;
     margin:10px 0;

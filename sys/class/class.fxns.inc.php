@@ -281,8 +281,11 @@ class Functions extends DB_Connect {
             // truncate string
             $stringCut = substr($string, 0, $length2cut); // truncate string
             // make sure it ends in a word so beautiful doesn't become beu...
-            return substr($stringCut, 0, strrpos($stringCut, ' ')) . '...' .(isset($readMoreLink)? $readMoreLink . 'Read More</a>':'');
+            $toReturn =  substr($stringCut, 0, strrpos($stringCut, ' ')) . '...' .(isset($readMoreLink)? $readMoreLink . 'Read More</a>':'');
+        }else{
+            $toReturn = $string;
         }
+        return $toReturn;
     }
 
     /**
