@@ -23,4 +23,15 @@ $(function () {
             tick()
         }, 1500);
     });
+    $( "#dialog-confirm" ).dialog({
+        resizable: false,
+        height: "auto",
+        width: 400,
+        modal: true,
+        buttons: {
+            Cancel: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    });
 });

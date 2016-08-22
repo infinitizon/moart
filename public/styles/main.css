@@ -33,6 +33,11 @@
     /*padding:0; margin: auto;*/
 /*}*/
 
+h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
+    color: rgba(207, 174, 112, 1);
+}
 @media (max-width: 600px) {
     .navbar-default .navbar-nav a{
         background:rgba(24, 153, 213, 1);
@@ -113,6 +118,9 @@ body{
 .well,.well-lg{
     border: none; border-radius:0; margin-bottom:0;
 }
+.well-lg.notice h4{
+    color:#FFFFFF;
+}
 .well.notice,.well-lg.notice{
     background:rgba(24, 153, 213, 1);
     color:#FFFFFF;
@@ -177,10 +185,6 @@ section.feedback .item h4 {
 section.feedback .item span {
     font-style: normal;
 }
-h1,h2,h3,h4,h5,h6{
-    padding: 0;margin:0;
-}
-
 /* Footer styles */
 footer {
     background-color: #2d2d30;
@@ -193,4 +197,9 @@ footer a {
 footer a:hover {
     color: #777;
     text-decoration: none;
+}
+
+/****** ******/
+.ui-widget-overlay {
+    background:rgba(0, 0, 0, 1) !important;
 }

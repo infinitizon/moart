@@ -1,5 +1,5 @@
 <?php
-$script_js = array('bootstrap/bootstrap-select/1.11.0/bootstrap-select.min.js','ticker.js');
+$script_js = array('bootstrap/bootstrap-select/1.11.0/bootstrap-select.min.js','ticker.js','main.js');
 $style_css = array('bootstrap-select/1.11.0/bootstrap-select.min.css','ticker.css');
 
 
@@ -35,7 +35,7 @@ require_once 'assets/common/header.inc';
         </div>
     </div>
     <div class="well-lg notice">
-        <div class="container"><h4>Be the best by discussing with the proffessionals...</h4></div>
+        <div class="container"><h4 style="color:#FFF;">Be the best by discussing with the proffessionals...</h4></div>
     </div>
     <section class="well sevices">
         <div class="container">
@@ -47,7 +47,7 @@ require_once 'assets/common/header.inc';
                     $r_getNews->execute(array());
                     echo "<div class=\"ticker-container\"><div class=\"ticker-caption\"><p>Latest News</p></div><ul>";
                     while ($news = $r_getNews->fetch(PDO::FETCH_ASSOC)) {
-                        echo "<div><li class=\"news-item\"><span><a href=\"#\">{$news['news_title']}</a></span></li></div>";
+                        echo "<div><li class=\"news-item\"><span><a href=\"" . WEB_ROOT . "/news-and-events/{$news['news_id']}\">{$news['news_title']}</a></span></li></div>";
                     }
                     echo "</ul>";
                 ?>
