@@ -18,22 +18,9 @@ require_once 'assets/common/header.inc';
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h4 style="border-bottom:1px dotted #CCC; margin-bottom:10px;">Latest news</h4>
                     <?php
-                        $getNews = "SELECT news_id, news_title, news_details, create_date FROM news ORDER BY news_id DESC LIMIT 5";
-                        $getNews = $fxns->_execQuery($getNews);
-                        $news = "<ul id=\"ticker\">";
-                        foreach ($getNews as $assocKey => $details) {
-                            $readMoreLink = "<a href=\"" . WEB_ROOT . "/news-and-events/{$details['news_id']}\" id=\"{$details['news_id']}\">";
-                            $newsLink = $fxns->_readMore(strip_tags(html_entity_decode($details['news_details'])), 45, $readMoreLink);
-                            $news .= "<li>{$readMoreLink}";
-                            $news .= "<img src=\"" . (!empty($details['image']) ? $details['image'] : WEB_ROOT.'/images/img_not_available.png') . "\" class=\"img-responsive img-thumbnail\" />";
-                            $news .= "{$details['news_title']}</a><br /><span>{$newsLink}</span></li>";
-                        }
-                        $news .= "</ul>";
-                        echo $news;
+                    require_once 'assets/common/sidebar.inc';
                     ?>
-                    <h4 style="border-bottom:1px dotted #CCC; margin:10px 0;">Downloads</h4>
                 </div>
                 <div class="col-sm-9">
                     <h1>About Us</h1>

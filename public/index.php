@@ -73,16 +73,17 @@ require_once 'assets/common/header.inc';
     </section>
     <section class="featured-seller">
         <div class="container text-center">
-            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/chevron.png" class="img-responsive"></div>
-            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/firstBank.png" class="img-responsive"></div>
-            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/kpmg.png" class="img-responsive"></div>
-            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/bollore.jpg" class="img-responsive"></div>
-            <div class="featured-seller-img"><img src="<?php echo WEB_ROOT; ?>/images/clients/unionBank.png" class="img-responsive"></div>
+            <div class="row">
+                <div class="featured-seller-img col-lg-3"><img src="<?php echo WEB_ROOT; ?>/images/clients/chevron.png" class="img-responsive"></div>
+                <div class="featured-seller-img col-lg-3"><img src="<?php echo WEB_ROOT; ?>/images/clients/firstBank.png" class="img-responsive"></div>
+                <div class="featured-seller-img col-lg-3"><img src="<?php echo WEB_ROOT; ?>/images/clients/kpmg.png" class="img-responsive"></div>
+                <div class="featured-seller-img col-lg-3"><img src="<?php echo WEB_ROOT; ?>/images/clients/unionBank.png" class="img-responsive"></div>
+            </div>
         </div>
     </section>
     <section class="feedback">
         <div class="container text-center">
-            <h2>What our customers say</h2>
+            <h2 style="color: #000;">What our customers say</h2>
             <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -94,13 +95,13 @@ require_once 'assets/common/header.inc';
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <h4>"This company is the best real estate company I've seen. They make the whole thing so easy!"<br><span style="font-style:normal;">Emeka Anyaokwu, Vice President, Levante Box</span></h4>
+                        <h4 style="color: #000;">"This company is the best real estate company I've seen. They make the whole thing so easy!"<br><span style="font-style:normal;">Emeka Anyaokwu, Vice President, Levante Box</span></h4>
                     </div>
                     <div class="item">
-                        <h4>"One word... WOW!!"<br><span style="font-style:normal;">Simon Dalong, Salesman, Beverly Crane Nig. Ltd.</span></h4>
+                        <h4 style="color: #000;">"One word... WOW!!"<br><span style="font-style:normal;">Simon Dalong, Salesman, Beverly Crane Nig. Ltd.</span></h4>
                     </div>
                     <div class="item">
-                        <h4>"Could I... BE any more happy with this company? They make the construction of my home so stressless"<br><span style="font-style:normal;">Abimbola Hassan, Application developer, QuickAdverts</span></h4>
+                        <h4 style="color: #000;">"Could I... BE any more happy with this company? They make the construction of my home so stressless"<br><span style="font-style:normal;">Abimbola Hassan, Application developer, QuickAdverts</span></h4>
                     </div>
                 </div>
 

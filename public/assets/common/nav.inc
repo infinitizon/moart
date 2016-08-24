@@ -26,6 +26,7 @@
                     <li><a href="#">Downloads</a></li>
                 </ul>
             </li>
+            <li><a href="<?php echo WEB_ROOT; ?>/services/faqs">FAQs</a></li>
             <li><a href="<?php echo WEB_ROOT; ?>/contact">Contact us</a></li>
         </ul>
     </div>

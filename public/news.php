@@ -18,11 +18,12 @@ require_once 'assets/common/header.inc';
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <h4 style="border-bottom:1px dotted #CCC; margin:10px 0;">Downloads</h4>
+                <?php
+                require_once 'assets/common/sidebar.inc';
+                ?>
             </div>
             <div class="col-sm-9">
                 <?php
-
                     $getNews = "SELECT news_id, news_title, news_details, create_date FROM news ";
                     if(!$_GET['page'] && $_GET['news']){
                         $getNews .= " WHERE news_id = ".$_GET['news'];

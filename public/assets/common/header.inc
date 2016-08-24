@@ -2,6 +2,17 @@
 require_once 'core/init.inc.php';
 $fxns = new Functions($dbo);
 
+if(isset($_POST) && $_POST['submit']=='Contact Us'){
+    try{
+        $q_newContact = "INSERT INTO contact (name,phone,email,subject,comment,create_date) VALUES (:name,:phone,:email,:subject,:comment,NOW())";
+        $r_newContact = $dbo->prepare($q_newContact);
+        $r_newContact->execute(array(":name" => $_POST['name'],":phone" => $_POST['telephone'],":email" => $_POST['email'],":subject" => $_POST['subject'],":comment" => $_POST['comment']));
+        $alertMessage = array('type'=>'success', 'message'=>'Record submitted successfully.<br>We will contact you soon.');
+
+    }catch(Exception $e){
+        $alertMessage = array('type'=>'danger', 'message'=>'Error'.$e->getMessage());
+    }
+}
 if(isset($_POST) && isset($_POST['newsletter'])){
     $q_ChkUsr = "SELECT * FROM newsletter WHERE email = :email  ";
     $q_ChkUsr = $dbo->prepare($q_ChkUsr);
@@ -42,3 +53,11 @@ if(isset($_POST) && isset($_POST['newsletter'])){
     ?>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=1468318270089362";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>

@@ -5,6 +5,7 @@ RewriteRule ^/?news-and-events/$ news.php [L]
 RewriteRule ^/?news-and-events/([0-9]+)$ news.php?news=$1 [L]
 RewriteRule ^/?news-and-events/([0-9]+)/([0-9]+)$ news.php?news=$1&page=$2 [L]
 
+RewriteRule ^/?services/(.+)$ services.php?page=$1 [L]
 RewriteRule ^/?about$ about.php [L]
 RewriteRule ^/?contact$ contactus.php [L]
 RewriteRule ^/?home(/)$ home/index.php [L]

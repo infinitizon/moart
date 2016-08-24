@@ -26,7 +26,7 @@
             </div>
             <hr>
             <p class="pull-right">&copy; 2016 infinitizon. All rights reserved</p>
-            <p>Privacy Policy | <a href="http://webmail.moartcompanyltd.com/">FAQs</a> | <a href="http://webmail.moartcompanyltd.com/">webmail</a> </p>
+            <p>Privacy Policy | <a href="<?php echo WEB_ROOT; ?>/services/faqs">FAQs</a> | <a href="http://webmail.moartcompanyltd.com/">webmail</a> </p>
         </div>
     </footer>
     <script src="<?php echo WEB_ROOT; ?>/scripts/jquery-ui/1.12.0/external/jquery/jquery.js" type="text/javascript"></script>

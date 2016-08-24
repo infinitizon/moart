@@ -109,6 +109,14 @@ body{
             ),url("../images/news.jpg") center no-repeat;
     background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
 }
+.jumbotron.service_img {
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.45)
+            ),url("../images/service.jpg") center no-repeat;
+    background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
+}
 .jumbotron .container.searchForm{
     margin-top:150px;
 }
@@ -137,7 +145,6 @@ section.sevices article{
     display: inline-block;
     height: 60%;
     text-align: center;
-    width: 18%;
 }
 
 /*********** News List ********************/
@@ -154,7 +161,12 @@ section.sevices article{
 #ticker li img{ float:left; width:50px; height:50px; margin:0 5px; }
 #ticker li a{ text-decoration:none; box-shadow:none;box-shadow:0; border:none; margin-top:20px; background:none;}
 /*********** End News Ticker ********************/
-
+div.faq a.faq-link{
+    display: block;
+    cursor: pointer;
+}
+.money{
+    color:rgba(209, 73, 140, 1);}
 section.sevices div.img-circle{
     border:1px solid #000; padding:10px; width:100px; height:100px;display:inline-block;
     margin:10px 0;
