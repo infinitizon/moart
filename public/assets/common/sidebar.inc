@@ -19,6 +19,7 @@
 <h4 style="border-bottom:1px dotted #CCC; margin:20px 0;">Downloads</h4>
 <ul>
     <li><a href="/assets/downloads/subscription.jpg">Subscription form</a></li>
+    <li><a href="/assets/downloads/attest.jpg">Subscription form (cont.) </a></li>
 </ul>
 <h4 style="border-bottom:1px dotted #CCC; margin:20px 0;">Feeds</h4>
 <!--https://developers.facebook.com/docs/plugins/page-plugin-->
