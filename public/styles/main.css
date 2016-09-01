@@ -90,14 +90,7 @@ hr.style:before {
     color: #FFF;
     padding:0; margin: 0;
 }
-.jumbotron.main_img {
-    background:
-            linear-gradient(
-                    rgba(0, 0, 0, 0.45),
-                    rgba(0, 0, 0, 0.45)
-            ),url("../images/bg.jpg") center no-repeat;
-    background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
-}.jumbotron.contact_img {
+.jumbotron.contact_img {
      background:
              linear-gradient(
                      rgba(0, 0, 0, 0.45),
@@ -138,7 +131,7 @@ hr.style:before {
 .well,.well-lg{
     border: none; border-radius:0; margin-bottom:0;
 }
-.well-lg.notice h4{
+.well.notice h4{
     color:#FFFFFF;
 }
 .well.notice,.well-lg.notice{

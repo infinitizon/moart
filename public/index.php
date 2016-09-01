@@ -35,25 +35,23 @@ require_once 'assets/common/header.inc';
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
 <!--   <img src="http://placehold.it/1920x600/02809E/18D18F" class="img-responsive" width="100%" alt="Chania">    -->
                 <img src="/images/carousel/1.jpg" class="img-responsive" width="100%" height="451" alt="Chania">
+                <div class="carousel-caption">
+                    <h3>Affordable Homes</h3>
+                    <p style="color:rgba(24, 153, 213, 1); font-size:1.5em;">The philosophy driving us is helping you to own that dream home you've always desired. <br>MOART HOMES, is as much a passion as it is a business. That’s why we have continually led the industry in offering high quality real estate services to our clients. </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/carousel/3.jpg" class="img-responsive" width="100%" height="451"  alt="Chania">
             </div>
 
             <div class="item">
-                <img src="/images/carousel/2.jpg" class="img-responsive" width="100%" height="451"  alt="Chania">
-            </div>
-
-            <div class="item">
-                <img src="/images/bg.jpg" class="img-responsive" width="100%" height="451" alt="Chania">
-            </div>
-
-            <div class="item">
-                <img src="/images/bg.jpg" class="img-responsive" width="100%" height="451" alt="Chania">
+                <img src="/images/carousel/4.jpg" class="img-responsive" width="100%" height="451"  alt="Chania">
             </div>
         </div>
         <!-- Left and right controls -->
@@ -68,7 +66,7 @@ require_once 'assets/common/header.inc';
     </div>
 <!--  Carousel Ends  -->
 
-    <div class="well-lg notice">
+    <div class="well notice">
         <div class="container"><h4 style="color:#FFF;">Be the best by discussing with the proffessionals...</h4></div>
     </div>
     <section class="well sevices">
